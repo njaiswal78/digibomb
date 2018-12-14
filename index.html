@@ -69,17 +69,6 @@ $(document).ready(function() {
 });
 </script>
 <script>
-var bot=function(){
-document.getElementById("test1").style.display="block";
-document.title="Anushka has joined chat ... "
-}
-window.onload = function() {
-  setTimeout(bot, 10000);
-}
-
-
-</script>
-<script>
              
 $( document ).on( 'keydown', function ( e ) {
     if ( e.keyCode === 27 ) {
@@ -95,6 +84,23 @@ $( document ).on( 'keydown', function ( e ) {
 </head>
 
 <body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+  <audio id="myAudio" >
+  <source src="pop.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script>
+var bot=function(){
+document.getElementById("test1").style.display="block";
+document.title="Anushka has joined chat ... ";
+document.getElementById('myAudio').play();
+}
+window.onload = function() {
+  setTimeout(bot, 10000);
+
+}
+
+</script>
+
     <!-- Loader -->
     <div id="site-loader" class="load-complete">
         <div class="loader">
