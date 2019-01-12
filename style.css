@@ -55,6 +55,24 @@ a {
 }
 /* - Padding/Margin */
 
+.item {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.item active {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.iframe-class{
+    position: absolute;
+    top: 0;
+    left: -250px;
+    border: 0;
+}
+
 
 
 #fan{
