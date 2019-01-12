@@ -1098,6 +1098,9 @@ a {
         width: 20%;
         max-width: 25%
     }
+    .srv-img{
+        position: relative;
+    }
 }
 /* -- max-width: 1200px */
 @media (max-width: 1200px) {
@@ -1162,7 +1165,7 @@ a {
     .section-header h3 {
         font-size: 17px;
     }
-    #fan{
+    #fan #transparent #mobile #signage{
         width: 90%;
     }
 }
