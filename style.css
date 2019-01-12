@@ -55,6 +55,44 @@ a {
 }
 /* - Padding/Margin */
 
+#fan{
+    transition: transform .2s;
+}
+
+#fan:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+#transparent{
+    transition: transform .2s;
+}
+
+#transparent:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+#mobile{
+    transition: transform .2s;
+}
+
+#mobile:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+#signage{
+    transition: transform .2s;
+}
+
+#signage:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
 .no-padding {
     padding: 0;
 }
