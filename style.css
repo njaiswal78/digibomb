@@ -55,6 +55,7 @@ a {
 }
 /* - Padding/Margin */
 
+
 .item {
     position: relative;
     overflow: hidden;
@@ -1060,10 +1061,16 @@ a {
 /* ========================================================================== */
 /* ========================================================================== */
 /* -- min-width: 1200 */
-@media (min-width: 1200px) {
-    .container {
-        width: 1200px;
+@media (min-width: 1200px and max-width: 1900px) {
+    #fan #transparent #mobile #signage{
+      width: 20% 
+      margin-left:-50px;
     }
+
+    .container {
+        width: 100%;
+    }
+    
 }
 /* -- min-width: 992 */
 @media (min-width: 992px) {
@@ -1087,6 +1094,10 @@ a {
         padding-right: 30%;
         padding-left: 0;
     }
+    #fan #transparent #mobile #signage{
+        width: 20%;
+        max-width: 25%
+    }
 }
 /* -- max-width: 1200px */
 @media (max-width: 1200px) {
@@ -1097,6 +1108,10 @@ a {
     }
     .footer-main .footer-social li {
         margin-right: 16px;
+    }
+#fan #transparent #mobile #signage{
+        width: 20%;
+        max-width: 25%
     }
 }
 /* -- max-width: 991 */
@@ -1114,6 +1129,11 @@ a {
     .footer-main .col-xs-6.widget.widget_instagram {
         clear: left;
     }
+    #fan #transparent #mobile #signage{
+        width: 80%;
+        max-width: 100%
+        
+    }
 }
 /* --  max-width: 639 */
 @media (max-width: 639px) {
@@ -1126,6 +1146,10 @@ a {
     .footer-main .col-xs-6.widget.widget_links {
         padding-left: 15px;
     }
+    #fan #transparent #mobile #signage{
+        width: 80%;
+
+    }
 }
 /* --  max-width: 479 */
 @media (max-width: 479px) {
@@ -1137,5 +1161,8 @@ a {
     /* ## Section Header */    
     .section-header h3 {
         font-size: 17px;
+    }
+    #fan{
+        width: 90%;
     }
 }
