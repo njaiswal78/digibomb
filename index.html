@@ -175,21 +175,24 @@ $( document ).on( 'keydown', function ( e ) {
   Your browser does not support the audio element.
 </audio>
 <script>
-	var targetWidth = 768;
-if ( $(window).width() &gt;= targetWidth) {   
+	  
 var bot=function(){
 document.getElementById("test1").style.display="block";
 document.title="Anushka has joined chat ... ";
 document.getElementById('myAudio').play();
 }
-window.onload = function() {
-  setTimeout(bot, 25000);
 
-}
+window.onload = function() {
+	
+	var targetWidth = 768;
+if ( $(window).width() &gt;= targetWidth) { 
+  setTimeout(bot, 25000);
 }
 	else{
 	
 	}
+
+
 
 </script>
 
