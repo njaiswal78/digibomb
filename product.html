@@ -67,6 +67,34 @@ $( document ).on( 'keydown', function ( e ) {
     }
 });
 </script>
+<script>
+$(document).ready(function () {
+  $('.group').hide();
+  $('#42').show();
+  $('#target').change(function () {
+    $('.group').hide();
+    $('#'+$(this).val()).show();
+	
+	if ($(this).val()=='100')
+	{$('#fanimage').attr('src','images/100cm.jpg')}
+	 else if ($(this).val()=='65')
+	{$('#fanimage').attr('src','images/65cm.jpg')}
+	else 
+	{$('#fanimage').attr('src','images/42cm.jpg')}
+
+  })
+  
+});
+</script>
+<style>
+
+@media only screen and (max-width:601px){
+#fanimage{
+margin-top:500px;
+}
+}
+
+</style>
 
 </head>
 
@@ -145,7 +173,7 @@ overflow: hidden;"></iframe><div data-style="" class="wp2img" id="comp-jo1ztibmi
 
 <div id="next" style="width:100%;height:100%;">
 <div id="image" style="margin-left:20%;">
-<img src="images/qr1.jpg" width="80%" height="30%" style="
+<img src="images/42cm.jpg" id="fanimage" width="30%" height="30%" style="
 -moz-border-radius: 5px;
 border-radius: 5px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
@@ -153,14 +181,46 @@ border-radius: 5px;
   margin-top: 7%;
  " />
 
-</div>
-<div id="txt" style="margin-left:20%;margin-right:15%;font-size: 14px;font-family: 'Lora';letter-spacing: 0.28px;line-height: 26px;color: #888;margin-top: 2%">
-digiOmega engages your customers on LED fans and 3D holograms where they can directly buy products through scanning QR codes and increase sales and revenue for the company.
+<span style="float:left;margin-left:35%;margin-right:20%;margin-top:-32%;font-size:10px;font-family:arial;">
+<h1>Product Specification
+</h1>
+Number of Blades	:4, 2<br>
+Brand:	digiOmega<br>
+Connectivity Type:	Wireless<br>
+Material:	ABS+PC+Aluminum<br>
+Color:	BLACK<br>
+Brightness:	1200LM<br>
+Display Type:	LED<br>
+Usage:	Business & Education<br>
+Warranty:	1 YEAR<br>
+Voltage:	10-15w<br>
+Dimension:	42/65/100CM<br>
+Display Function:	Animation,Graphics,Video,JPEG,PNG,GIF<br>
+	Remote Access:	Yes<br>
+Resolution: 1048px<br>
+Product Type:	3D Hologram Advertising Display LED Fan<br>
+Common Name:	Hologram Fan<br>
+Minimum Order Quantity:	1 Piece<br>
+<h5>Choose your model: <form action="https://digiomega.in/thankyou.html">
+  <select id="target" name="model">
+    <option value="42">42 cm Hologram fan</option>
+    <option value="65">65 cm Hologram fan</option>
+    <option value="100">100 cm Hologram fan</option>
+    
+  </select>
+  <br><br>
+<h4>
+<div id="42" class="group">Price: 25000/- </div>
+<div id="65" class="group">Price: 55,000/-</div>
+<div id="100" class="group">Price: 150,000/-</div>
+</h4>
+<p style="font-size:10px;">*prices are inclusinve of GST</p>
+  <input type="Submit" value="Buy Now" style="background-color:black;color:white;font-size:15px;padding:2px;margin:2px;">
+</form>
+</h5>
 
-<br>
-We will run animated videos on 3D holograms and transparent LEDs with embedded QR code. Customers can buy prodcuts on the go by scanning this code on any smartphones where they will be re-directed to ecommerce website.
-<br><br>
-<p style="text-align:center;font-size:50px;margin-bottom: 3%;">We are open to discussion<span><a href="https://api.whatsapp.com/send?phone=919354367339&text=Hi digiOmega, We would like to know more about your advertisement services" target="_blank"><img src="images/whatsapp.png" width="15%" height="15%" /></a></span></p>
+</span>
+
 </div>
 </div>
 
